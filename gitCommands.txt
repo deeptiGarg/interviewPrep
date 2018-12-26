@@ -1,0 +1,19 @@
+Using GIT CMD - windows
+
+To check settings-
+git config --list
+
+To clone a repo
+git clone <repo-url>
+
+To check if local repo is up-to-date
+git status
+
+To add a new change/new file to the next commit
+git add <fileName>
+
+To commit
+git commit
+
+To push changes
+git push
