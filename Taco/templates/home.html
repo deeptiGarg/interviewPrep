@@ -1,0 +1,45 @@
+<form method="post" action="/">
+<input type="submit" name="btnHome" value = "Home"></input> <input type="submit" name="btnList" value="My List"></input></form>
+<h1 style="color: #5e9ca0;">Taco Maker</h1>
+<p>This webpage is used for building your own customized Tacos and also to add a randomized Taco to your delicious and yummy Taco bucket!</p>
+<p>&nbsp;</p>
+<h2 style="color: #2e6c80;">Add ingredients for your Taco:</h2>
+<p>&nbsp;</p>
+<form method="post">
+<ol style="list-style: none; font-size: 14px; line-height: 32px; font-weight: bold;">
+<li style="clear: both;">Shell:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<select name= shellsOptions method="GET" action="/">
+    {% for i,shell in shellsOptions.items() %}
+    <option value= "{{i}}" SELECTED>{{shell}}</option>"
+    {% endfor %}
+</select><br />
+Base Layer:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<select name= baseOptions method="GET" action="/">
+    {% for i,base in baseOptions.items() %}
+    <option value= "{{i}}" SELECTED>{{base}}</option>"
+    {% endfor %}
+</select>
+<br />Mixin:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+<select name= mixinsOptions method="GET" action="/">
+    {% for i,mix in mixinsOptions.items() %}
+    <option value= "{{i}}" SELECTED>{{mix}}</option>"
+    {% endfor %}
+</select>
+<br />Condiment:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<select multiple name= condimentsOptions method="GET" action="/">
+    {% for i,condiment in condimentsOptions.items() %}
+    <option value= "{{i}}" >{{condiment}}</option>"
+    {% endfor %}
+</select>
+<br />Seasoning:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<select multiple name= seasoningOptions method="GET" action="/">
+    {% for i,seasoning in seasoningOptions.items() %}
+    <option value= "{{i}}" >{{seasoning}}</option>"
+    {% endfor %}
+</select><br /></li>
+<li style="clear: both;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</li>
+</ol>
+
+<p><input style="background-color: #2e6c80; color: #fff; display: inline-block; padding: 3px 10px; font-weight: bold; border-radius: 5px;" type="submit" name="createTaco" value="Add a custom Taco">
+<input style="background-color: #2e6c80; color: #fff; display: inline-block; padding: 3px 10px; font-weight: bold; border-radius: 5px;" type="submit" name="randomTaco" value="Surprise yourself with our special Taco">
+</p>
+</form>

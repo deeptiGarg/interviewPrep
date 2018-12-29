@@ -1,0 +1,14 @@
+<form method="post" action="/">
+<input type="submit" name="btnHome" value = "Home"></input> <input type="submit" name="btnList" value="My List"></input></form>
+<h1 style="color: #5e9ca0;">My List</h1>
+<p>This webpage lists the Tacos that have been added to my list</p>
+<p>&nbsp;</p>
+<h2 style="color: #2e6c80;">My Tacos:&nbsp;</h2>
+<ol style="list-style: none; font-size: 14px; line-height: 32px; font-weight: bold;" name= "myTacos" method="GET" action="/">
+{% for i,ing in myTacos.items() %}
+<form method="post" action="/">
+<li type="1" style="clear: both;"><span>{{myTacoName[i]}}</span><input name ="toDelete" type="checkbox" value={{i}}><br/><span style="color: grey;">{{ing}}</span></li>
+{% endfor %}
+
+<p><input style="background-color: #2e6c80; color: #fff; display: inline-block; padding: 3px 10px; font-weight: bold; border-radius: 5px;" type="submit" name="btnRemove" value="Remove"/></p>
+</form>

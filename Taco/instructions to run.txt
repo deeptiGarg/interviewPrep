@@ -1,0 +1,14 @@
+Assumptions - You have pip and python installed on the machine.
+
+1. Go to cmd -> pip install flask
+
+2. Download and unzip the Taco folder. Go to the directory where Taco folder is located.
+
+3. Ensure that templates folder contains myList.html and home.html
+
+4. Go to cmd -> cd <path to Taco>
+
+5. python taco.py
+
+6. Access http://127.0.0.1:5000/ from Chrome or any other browser. (I worked on Chrome and Windows 10 PC)  
+
