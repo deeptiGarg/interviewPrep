@@ -13,7 +13,7 @@ To add a new change/new file to the next commit
 git add <fileName>
 
 To commit
-git commit
+git commit -m "commit message"
 
 To push changes
 git push
