@@ -17,3 +17,22 @@ git commit
 
 To push changes
 git push
+
+To create a new repo - 
+1. go to the working directory on your local disk in git cmd. 
+git init
+
+2. add files -
+git add .      //all files
+git add <fileName>	
+
+3. git commit -m "First commit"
+
+4. Go to github and create a repo from the browser.
+
+5. git remote add origin https://github.com/deeptiGarg/to-do-list.git
+
+6. git push origin master
+
+To remove any file from repo - 
+git rm <fileName>
