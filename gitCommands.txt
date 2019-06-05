@@ -36,3 +36,7 @@ git add <fileName>
 
 To remove any file from repo - 
 git rm <fileName>
+
+
+TO PULL from a branch
+git pull origin testBranch
