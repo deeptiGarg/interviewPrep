@@ -40,3 +40,37 @@ git rm <fileName>
 
 TO PULL from a branch
 git pull origin testBranch
+
+
+git clone https://github.com/NervanaSystems/private-nlp-architect.git
+
+git pull origin lexicon_manager
+
+
+
+To check branch —
+
+git branch
+
+To do a hard reset —
+git reset -hard
+
+To Fetch the latest changes - 
+git fetch origin 
+
+To create a copy of a branch on my local pc — 
+git checkout -b lexicon_branch origin/lexicon_branch
+
+
+
+Create my own branch/ fork a new branch—
+Cd ..
+
+To commit to a new branch — 
+git commit -m "Test commit"
+
+
+To push changes to a new branch —
+git push origin dp/testBranch1
+
+
